@@ -1,19 +1,35 @@
 # TwitterPredictStream
 
-with "jsonWrapper.py" we have selected the non retweets from the downloaded data.  
-With "list.py" we have merged the msg parts of the tweets into one bigger file
+```flow
+st=>start: Input_Dir:>http://www.google.com[blank]
+e=>Training_Set:>http://www.google.com
+op1=>operation: jsonWrapper.py
+op2=>operation: list.py
 
-Because  
+
+st->op1->cond
+op1->op2->e
+
+``
+
+with "jsonWrapper.py" we have selected the non retweets from the downloaded data.  
+With "list.py" we have merged the msg parts of the tweets into one bigger file  
+
+Because of:  
+```python
+
 df = pd.Series(list_of_wordlen)  
-  
-#pprint(df.describe())  
+print(df.describe())
+
 for i in range(90,100):  
 	pprint(df.quantile(i/100))  
   
 for i in range(990,1000):  
 	pprint(df.quantile(i/1000))  
-    
-My training seque len is going to be 23 it is might long a bit but we are going to see  
+```  
+Our training sequence length is going to be 23.
+
+it is might long a bit but we are going to see  
 We are going to hash all the links as: last_eight_char(md5(http))  
 We change compile(loss='categorical_crossentropy', optimizer='adam')  
 into  
