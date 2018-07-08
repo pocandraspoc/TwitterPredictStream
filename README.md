@@ -10,7 +10,7 @@ op2=>operation: list.py
 st->op1->cond
 op1->op2->e
 
-``
+```
 
 with "jsonWrapper.py" we have selected the non retweets from the downloaded data.  
 With "list.py" we have merged the msg parts of the tweets into one bigger file  
