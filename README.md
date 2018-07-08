@@ -1,7 +1,7 @@
 # TwitterPredictStream
 
-with "jsonWrapper.py" I have selected the non retweets from the downloaded data.  
-With "list.py" I have merged the msg parts of the tweets into one bigger file
+with "jsonWrapper.py" we have selected the non retweets from the downloaded data.  
+With "list.py" we have merged the msg parts of the tweets into one bigger file
 
 Because  
 df = pd.Series(list_of_wordlen)  
@@ -14,5 +14,11 @@ for i in range(990,1000):
 	pprint(df.quantile(i/1000))  
     
 My training seque len is going to be 23 it is might long a bit but we are going to see  
-I am going to hash all the links as: last_eight_char(md5(http))
+We are going to hash all the links as: last_eight_char(md5(http))  
+We change compile(loss='categorical_crossentropy', optimizer='adam')  
+into  
+compile(loss='sparse_categorical_crossentropy', optimizer='adam')  
+
+because our matrix would be too big for our memory so we are going to use integers  
+@ [stack](https://stackoverflow.com/questions/46293734/memoryerror-in-keras-utils-np-utils-to-categorical)
 ### Thank you [atajti](https://github.com/atajti) for the starting data!
