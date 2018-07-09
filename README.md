@@ -1,7 +1,7 @@
 # TwitterPredictStream
 
   * With "jsonWrapper.py" we have selected the non retweets from the downloaded data.  
-  * With "concatenate.py" we have merged the msg parts of the tweets into one bigger file  
+  * With "concatenate.py" we have merged the msg parts of the tweets into one bigger file.  
 <p align="center">  
 	<img src="https://i.imgur.com/cboql4P.png" alt="https://i.imgur.com/cboql4P.png" class="shrinkToFit transparent" width="126" height="732">
  </p>
