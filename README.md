@@ -2,6 +2,8 @@
 
   * With "jsonWrapper.py" we have selected the non retweets from the downloaded data.  
   * With "list.py" we have merged the msg parts of the tweets into one bigger file  
+![alt text](https://drive.google.com/file/d/1w2r5upu5X6FTbdets2zpIMXTmaXH_R6K/view?usp=sharing)
+
 
   * Our training sequence length is going to be 23 because of:  
 ```python
