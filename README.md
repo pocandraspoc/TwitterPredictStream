@@ -1,9 +1,10 @@
 # TwitterPredictStream
 
   * With "jsonWrapper.py" we have selected the non retweets from the downloaded data.  
-  * With "list.py" we have merged the msg parts of the tweets into one bigger file  
-![alt text](https://i.imgur.com/cboql4P.png)
-
+  * With "concatenate.py" we have merged the msg parts of the tweets into one bigger file  
+<p align="center">  
+	![alt text](https://i.imgur.com/cboql4P.png)
+ </p>
 
   * Our training sequence length is going to be 23 because of:  
 ```python
