@@ -1,5 +1,10 @@
 # TwitterPredictStream
-
+## TODO
+  * Write down abstract, what this roject is about
+  * Add the architecture of the hole project to have a better understanding  
+    
+      
+        
   * With "jsonWrapper.py" we have selected the non retweets from the downloaded data.  
   * With "concatenate.py" we have merged the msg parts of the tweets into one bigger file.  
 <p align="center">  
