@@ -38,4 +38,9 @@ tensorflow/core/common_runtime/bfc_allocator.cc:275] Allocator (GPU_0_bfc) ran o
 fit(X, y, epochs=1, batch_size=4, callbacks=callbacks_list)
 ```  
 
-### Thank you [atajti](https://github.com/atajti) for the starting data!
+### Thank you [atajti](https://github.com/atajti) for the starting data!  
+## Concept-s  
+  * [Efficient BackProp](http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf Efficient BackProp)
+  * [Working with large datasets like Imagenet ](https://github.com/keras-team/keras/issues/68)
+  * [Keras Multi GPU DOC](https://keras.io/utils/#multi_gpu_model)
+  * [How to train on multi-GPUs when using fit_generator](https://github.com/keras-team/keras/issues/9502)
